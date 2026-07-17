@@ -33,9 +33,10 @@ console.log(somar(100,3));
 function verificarIdade(idade){
     if(idade >= 18){
         return "Maior de idade";
-    }else{
-        return "menor de idade";
     }
+
+    return "menor de idade";
+    
 }
 console.log(verificarIdade(35));
 
@@ -46,12 +47,14 @@ demais= sem desconto
 exiba o resultado utilizando console.log()
  */
 function calcularDesconto(valorCompra){
-    if(valorCompra > 200 && valorCompra <= 500){
-        return "Desconto 10%";
-    }else if(valorCompra > 500){
+    if(valorCompra > 500){
         return "Desconto 20%";
-    }else{
-        return "sem desconto";
     }
+    if(valorCompra > 200){
+        return "Desconto 10%";    
+    }
+    
+    return "sem desconto";
+    
 }
 console.log(calcularDesconto(150));
